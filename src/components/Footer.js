@@ -1,30 +1,58 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { CONTACT_INFO } from '../constants/contact';
 import './Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const handleWhatsApp = () => {
+    const phoneNumber = CONTACT_INFO.phoneLink.replace('+', '');
+    const message = encodeURIComponent('Hi Talha, I would like to discuss a project with you.');
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
+
   return (
-    <footer className="footer">
-      <div className="container">
-        <motion.div
-          className="footer-content"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="footer-section">
-            <motion.div
-              className="footer-brand"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-            >
-              MT
-            </motion.div>
-            <p>Building digital products that solve real problems</p>
-          </div>
+    <>
+      <motion.div
+        className="footer-cta-section"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="container">
+          <motion.button
+            onClick={handleWhatsApp}
+            className="btn btn-whatsapp"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="whatsapp-icon">💬</span>
+            Get in Touch via WhatsApp
+          </motion.button>
+        </div>
+      </motion.div>
+
+      <footer className="footer">
+        <div className="container">
+          <motion.div
+            className="footer-content"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="footer-section">
+              <motion.div
+                className="footer-brand"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
+                <img src="/assets/logo.png" alt="MT Logo" className="footer-logo" />
+              </motion.div>
+              <p>Building digital products that solve real problems</p>
+            </div>
 
           <div className="footer-section">
             <h4>Navigation</h4>
@@ -71,10 +99,10 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <p>&copy; {currentYear} Muhammad Talha. All rights reserved.</p>
-          <p>Crafted with attention to detail and modern best practices.</p>
-        </motion.div>
-      </div>
-    </footer>
+          </motion.div>
+        </div>
+      </footer>
+    </>
   );
 };
 

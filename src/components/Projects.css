@@ -80,6 +80,23 @@
   margin-top: auto;
 }
 
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.project-card-link.no-link {
+  cursor: default;
+  pointer-events: none;
+}
+
+.project-card-link:hover .project-card {
+  transform: translateY(-8px);
+}
+
 @media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);

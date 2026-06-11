@@ -5,21 +5,21 @@ import './Testimonials.css';
 const Testimonials = () => {
   const testimonials = [
     {
-      text: 'Talha delivered exceptional work on our trading platform. His technical expertise combined with attention to detail made the project a huge success. Highly recommended.',
-      author: 'Ahmed Khan',
-      title: 'CEO, DirectFN',
+      text: 'Talha is a fast learner who quickly understands new concepts and adapts to challenges. He works exceptionally well within a team, communicates effectively, and consistently contributes to achieving project goals. His positive attitude and willingness to learn make him a valuable asset to any development team.',
+      author: 'Abrar Amin',
+      title: 'CEO, Lemon Studios',
       avatar: '👨‍💼'
     },
     {
-      text: 'Working with Talha on the healthcare platform was seamless. He understood our requirements, delivered quality code, and provided excellent support throughout.',
-      author: 'Dr. Fatima Hassan',
-      title: 'Founder, Sehat Makaan',
-      avatar: '👩‍⚕️'
+      text: 'Working with Talha was a pleasure. His commitment to learning, ability to take ownership of tasks, and persistence in solving complex problems set him apart. He approached every challenge with professionalism and continuously exceeded expectations throughout his internship journey.',
+      author: 'Danish Ghani',
+      title: 'Senior Full Stack Developer, DirectFN',
+      avatar: '👨‍💻'
     },
     {
-      text: 'His WordPress expertise transformed our online presence. Custom features, perfect execution, and SEO optimization all delivered on time.',
-      author: 'Hassan Ali',
-      title: 'Director, Ingenious Concepts',
+      text: 'Talha consistently demonstrated strong technical skills, problem-solving abilities, and a commitment to delivering high-quality work. His contributions to client projects, proactive approach, and dedication to continuous improvement earned him a permanent position with our team.',
+      author: 'Ahmad Javeed Vaseer',
+      title: 'CEO & Founder, Ingenious Concepts',
       avatar: '🧑‍💼'
     }
   ];

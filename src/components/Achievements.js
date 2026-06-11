@@ -4,10 +4,10 @@ import './Achievements.css';
 
 const Achievements = () => {
   const achievements = [
-    { number: '50+', title: 'Projects Delivered', description: 'Successfully completed projects across multiple industries and platforms' },
-    { number: '30+', title: 'Clients Served', description: 'Built lasting relationships with startups, SMEs, and enterprises' },
+    { number: '10+', title: 'Projects Delivered', description: 'Successfully completed projects across multiple industries and platforms' },
+    { number: '5+', title: 'Clients Served', description: 'Built lasting relationships with startups, SMEs, and enterprises' },
     { number: '100%', title: 'Client Satisfaction', description: 'Committed to delivering excellence and exceeding expectations' },
-    { number: '5+', title: 'Years of Experience', description: 'From startup phase to mature product development' }
+    { number: '2', title: 'Years of Experience', description: 'From startup phase to mature product development' }
   ];
 
   const itemVariants = {

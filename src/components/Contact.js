@@ -15,7 +15,7 @@ const Contact = () => {
     {
       icon: '💼',
       label: 'LinkedIn',
-      value: 'linkedin.com/in/talha',
+      value: 'LinkedIn Profile',
       link: CONTACT_INFO.linkedin,
       action: CTA_ACTIONS.openLinkedIn
     },
@@ -102,17 +102,6 @@ const Contact = () => {
                 </div>
               </motion.a>
             ))}
-          </motion.div>
-
-          <motion.div className="contact-cta" variants={itemVariants}>
-            <motion.button
-              onClick={CTA_ACTIONS.getInTouch}
-              className="btn btn-primary btn-large"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get In Touch
-            </motion.button>
           </motion.div>
         </motion.div>
       </div>
