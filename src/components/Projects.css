@@ -1,0 +1,93 @@
+.projects {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  background: linear-gradient(135deg, rgba(47, 167, 199, 0.08), rgba(22, 104, 132, 0.04));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  background: linear-gradient(135deg, rgba(47, 167, 199, 0.12), rgba(22, 104, 132, 0.08));
+  border-color: var(--accent);
+  box-shadow: 0 20px 48px rgba(22, 104, 132, 0.25);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(47, 167, 199, 0.15), rgba(22, 104, 132, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-placeholder {
+  font-size: 3rem;
+}
+
+.project-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.project-challenge,
+.project-solution {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(47, 167, 199, 0.05);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.project-challenge strong,
+.project-solution strong {
+  color: var(--text);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
