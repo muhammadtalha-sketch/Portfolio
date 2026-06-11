@@ -7,7 +7,7 @@ const Experience = () => {
     {
       title: 'AI Automation Engineer',
       company: 'Ingenious Concepts',
-      date: 'January 2026 – April 2026',
+      date: 'January 2026 – Current',
       description: [
         'Designed and developed custom WordPress websites and solutions',
         'Engineered theme and plugin customizations for enterprise clients',
