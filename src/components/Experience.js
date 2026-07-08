@@ -15,7 +15,7 @@ const Experience = () => {
         'Delivered end-to-end solutions for healthcare and financial sectors',
         'Managed client relationships and project timelines'
       ],
-      projects: 'Key Projects: Sehat Makaan, PCG, Sygnifin'
+      projects: 'Key Projects: Election Compagin, Novious Global, Sehat Makaan, PCG, Sygnifin'
     },
     {
       title: 'Web Developer',
