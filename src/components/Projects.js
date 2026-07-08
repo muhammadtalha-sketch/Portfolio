@@ -50,14 +50,14 @@ const Projects = () => {
       link: 'https://novious-global.vercel.app'
     },
     {
-      icon: '🌐',
-      title: 'Enterprise WordPress Solutions',
-      description: 'Custom-built WordPress websites for multiple industries with SEO optimization.',
-      challenge: 'Creating unique designs while maintaining performance and SEO',
-      solution: 'Custom theme development, advanced plugin architecture, and optimization',
-      tech: ['WordPress', 'PHP', 'SEO'],
-      link: null
-    }
+      icon: '🗳️',
+      title: 'Election Campaign System',
+      description: 'A secure web-based campaign management platform for managing members, voter records, lawyers, and campaign operations with role-based access control.',
+      challenge: 'Managing thousands of member records, duplicate detection, secure authentication, and efficient campaign data organization.',
+      solution: 'Developed a centralized Next.js application with Supabase integration, advanced search & filtering, role-based user management, duplicate record detection, profile editing, image management, and SQL-based data migration.',
+      tech: ['Next.js', 'React', 'Supabase', 'TypeScript', 'Tailwind CSS'],
+      link: 'http://ecs.ingeniousc.com/'
+}
   ];
 
   const containerVariants = {
